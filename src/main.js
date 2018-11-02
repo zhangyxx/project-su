@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './assets/css/reset.css'
-// import 'font-awersome/css/font-awersome.min.css'
 import './assets/flexible/flexible.debug.js'
 import './assets/flexible/flexible_css.debug'
+// import '../static/font-awesome-4.7.0/css/font-awesome.min.css'
+import '../static/font-awesome/4.7.0/css/font-awesome.min.css'
+// import '../static/font-awesome/4.7.0/fonts/'
 Vue.config.productionTip = false
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)

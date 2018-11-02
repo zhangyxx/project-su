@@ -3,13 +3,13 @@
         <footer>
             <router-link to="/Myindex" tag="dl">
                      <dl>
-                    <dt></dt>
+                    <dt><i class="fa fa-rocket"></i></dt>
                     <dd>首页</dd>
                 </dl>
             </router-link>
              <router-link to="/Product" tag="dl">
                      <dl>
-                    <dt></dt>
+                    <dt><i class="fa fa-columns" aria-hidden="true"></i></dt>
                     <dd>产品</dd>
                 </dl>
             </router-link>
