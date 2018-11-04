@@ -10,6 +10,7 @@ import './assets/flexible/flexible_css.debug'
 import '../static/font-awesome/4.7.0/css/font-awesome.min.css'
 // import '../static/font-awesome/4.7.0/fonts/'
 Vue.config.productionTip = false
+import 'swiper/dist/css/swiper.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */

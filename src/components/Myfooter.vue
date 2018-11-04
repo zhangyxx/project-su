@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer>
-            <router-link to="/Myindex" tag="dl">
+            <router-link to="/" tag="dl">
                      <dl>
                     <dt><i class="fa fa-rocket"></i></dt>
                     <dd>首页</dd>
@@ -43,6 +43,7 @@ div {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 11111;
     dl {
       flex: 1;
     }
