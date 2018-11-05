@@ -183,6 +183,7 @@
         </div>
 
         <div class="more">查看更多</div>
+        <Myfooter></Myfooter>
     </div>
 </template>
 

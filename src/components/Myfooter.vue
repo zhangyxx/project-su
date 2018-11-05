@@ -3,25 +3,25 @@
         <footer>
             <router-link to="/Myindex" tag="dl">
                      <dl>
-                    <dt><i class="fa fa-rocket"></i></dt>
+                    <dt><i class="fa fa-home" aria-hidden="true"></i></dt>
                     <dd>首页</dd>
                 </dl>
             </router-link>
              <router-link to="/Product" tag="dl">
                      <dl>
-                    <dt><i class="fa fa-columns" aria-hidden="true"></i></dt>
+                    <dt><i class="fa fa-smile-o" aria-hidden="true"></i></dt>
                     <dd>产品</dd>
                 </dl>
             </router-link>
              <router-link to="/Match" tag="dl">
                      <dl>
-                    <dt></dt>
+                    <dt><i class="fa fa-github-alt" aria-hidden="true"></i></dt>
                     <dd>精准匹配</dd>
                 </dl>
             </router-link>
              <router-link to="/Mycenter" tag="dl">
                      <dl>
-                    <dt></dt>
+                    <dt><i class="fa fa-user" aria-hidden="true"></i></dt>
                     <dd>个人中心</dd>
                 </dl>
             </router-link>
