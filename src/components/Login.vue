@@ -16,9 +16,9 @@
                     <input type="text" placeholder="图文验证码">
                     <button class="denglv" @click="gofooter">登陆</button>
                     <div class="footer">
-                        <p @click="goforget">忘记密码</p>
+                        <p>忘记密码</p>
                         <p>|</p>
-                        <p @click="goregister">快速注册</p>
+                        <p>快速注册</p>
                     </div>
                 </div>
             </div>
@@ -31,13 +31,7 @@ export default {
     methods:{
         gofooter(){
             this.$router.push('./Myfooter');
-        },
-        goforget(){
-            this.$router.push('./Forgetpass')
-        },
-        goregister(){
-            this.$router.push('./Register')
-        },
+        }
     }
 };
 </script>
@@ -102,7 +96,6 @@ html {
           border-bottom: 1px solid #ffffff;
           background: none;
           font-size: 0.4rem /* 30/75 */;
-          color: #ffffff;
           padding-left: 0.533333rem /* 40/75 */ /* 20/75 */;
           &:first-child {
             margin-top: 0.533333rem /* 40/75 */;

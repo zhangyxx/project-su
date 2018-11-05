@@ -14,8 +14,21 @@
         <div class="content">
             <dl>
                 <dt><img src="../assets/images/login1.jpg" alt=""></dt>
-                <dd></dd>
+                <dd><h1>信用钱包</h1><p>信用钱包</p><span>成功申请1234次|评论1234次</span></dd>
             </dl>
+            <div class="right">
+              <p><img src="../assets/images/cp评论-icon.png">
+              <img src="../assets/images/cp筛选.png" >
+              <img src="../assets/images/cp筛选.png" >
+              <img src="../assets/images/cp筛选.png" >
+              <img src="../assets/images/cp筛选.png">
+              </p>
+              <span>成功率</span>
+            </div>
+        </div>
+        <div class="tag">
+          <p><span>HOT</span><span>标签</span><span>标签你你你</span></p>
+          <p>产品简介：阿萨德的更改后即可去而一瓶自行车吗都是反环境去啊责任奋斗阿萨德飞规划局空间还是打算</p>
         </div>
         
     </div>
@@ -84,20 +97,33 @@ export default {
     margin: 0 auto;
     margin-top: 0.24rem;
     border-top: 0.12rem solid red;
-    dl{
-        padding:  0.32rem ;
-        background: white;
-        dt{
-            width: 1.6rem;
-            height: 1.6rem;
-            img{
-                width: 100%;
-                height: 100%;
-            }
+    dl {
+      padding: 0.32rem;
+      background: white;
+      dt {
+        float: left;
+        width: 1.6rem;
+        height: 1.6rem;
+        img {
+          width: 100%;
+          height: 100%;
         }
-        dd{
-
+      }
+      dd {
+        float: right;
+      }
+    }
+    .right {
+      
+      float: right;
+      p {
+        display: flex;
+        img {
+          flex: 1;
         }
+      }
+      span {
+      }
     }
   }
   .activ {

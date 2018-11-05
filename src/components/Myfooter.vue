@@ -43,6 +43,7 @@ div {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 11111;
     dl {
       flex: 1;
     }
