@@ -9,6 +9,7 @@ import Mycenter from '@/components/Mycenter'
 import Login from '@/components/Login'
 import paihang from '@/components/paihang'
 import Mynews from '@/components/Mynews'
+import huankuan from '@/components/huankuan'
 Vue.use(Router)
 
 export default new Router({
@@ -17,6 +18,11 @@ export default new Router({
       path: '/',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/huankuan',
+      name: 'huankuan',
+      component: huankuan
     },
     {
       path: '/Mynews',
