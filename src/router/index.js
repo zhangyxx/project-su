@@ -24,7 +24,7 @@ export default new Router({
     {
       path: '/help',
       name: 'help',
-      component: shoucang
+      component: help
     },
     {
       path: '/shoucang',

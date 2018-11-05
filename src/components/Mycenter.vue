@@ -41,7 +41,7 @@ export default {
         this.$router.push('./shoucang')
       },
       tohelp(){
-        this.$router.push('./tohelp')
+        this.$router.push('./help')
       }
     }
 }
