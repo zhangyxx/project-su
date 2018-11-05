@@ -4,8 +4,8 @@
             <span @click="goback"> < </span>
             <ul>
                 <li class="active">进度查询</li>
-                <li>还款提醒</li>
-                <li>通知</li>
+                <li @click="tohuankuan2">还款提醒</li>
+                <li @click="totongzhi">通知</li>
             </ul>
             <p></p>
         </header>
@@ -119,8 +119,14 @@
 export default {
     methods:{
         goback(){
-            this.$router.back();
-        }
+            this.$router.push('./Myindex');
+        },
+        tohuankuan2(){
+            this.$router.push('./huankuan2');
+        },
+         totongzhi(){
+            this.$router.push('./tongzhi');
+        },
     }
 }
 </script>
@@ -155,8 +161,8 @@ div{
                     height: 100%;
                     line-height: .666667rem /* 50/75 */;
                 }
-                .active{
-                    background: #35c583;
+                 .active{
+             background: #35c583;
                     color: #ffffff;
                 }
             }
