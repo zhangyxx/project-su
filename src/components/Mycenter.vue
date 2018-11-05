@@ -1,18 +1,14 @@
 <template>
-<<<<<<< HEAD
     <div>
         这是个人中心
-        
-        <Myfooter></Myfooter>
-    </div>
-=======
-    <header>
+         <header>
         <div class="touxiang"></div>
         <div class="name">马杀鸡</div>
         <div class="geren">个人资料</div>
         <div class="fu"><img src="../assets/images/箭头右.png"></div>
     </header>
->>>>>>> a90bb89b7d6218bada3a036f3033ddd4686d1a6b
+        <Myfooter></Myfooter>
+    </div>
 </template>
 
 <script>
