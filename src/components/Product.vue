@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <div class="warp">
         <ul class="minnav">
             <li v-for="(v,i) in arr " :key="i" @click=" tabIndex=i" :class="{activ:tabIndex==i}">{{v}}</li>
@@ -32,11 +31,6 @@
           <p>产品简介：阿萨德的更改后即可去而一瓶自行车吗都是反环境去啊责任奋斗阿萨德飞规划局空间还是打算</p>
         </div>
         
-=======
-    <div>
-        这是产品页面
-        <Myfooter></Myfooter>
->>>>>>> e4d18e4b4478c7019fedf41359c3cffa43f56e48
     </div>
 
 
@@ -44,9 +38,7 @@
 </template>
 
 <script>
-import Myfooter from '@/components/Myfooter.vue'
 export default {
-<<<<<<< HEAD
   data() {
     return {
       tabIndex: 0,
@@ -62,12 +54,6 @@ export default {
   },
   methods: {}
 };
-=======
-    components:{
-        Myfooter
-    }
-}
->>>>>>> e4d18e4b4478c7019fedf41359c3cffa43f56e48
 </script>
 
  <style lang="less"  >
