@@ -10,6 +10,8 @@ import Login from '@/components/Login'
 import paihang from '@/components/paihang'
 import Mynews from '@/components/Mynews'
 import huankuan from '@/components/huankuan'
+import shoucang from '@/components/shoucang'
+import help from '@/components/help'
 Vue.use(Router)
 
 export default new Router({
@@ -18,6 +20,16 @@ export default new Router({
       path: '/',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/help',
+      name: 'help',
+      component: help
+    },
+    {
+      path: '/shoucang',
+      name: 'shoucang',
+      component: shoucang
     },
     {
       path: '/huankuan',

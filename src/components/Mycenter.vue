@@ -18,9 +18,9 @@
                 <div class="tan-item"><img src="../assets/images/待放款.png">待放款</div>
                 <div class="tan-item"><img src="../assets/images/还款中.png">还款中</div>
             </div>
-            <div class="wode"><img src="../assets/images/消息提醒.png">还款提醒<img class="img1" src="../assets/images/箭头右2.png"></div>
-            <div class="wode"><img src="../assets/images/收藏1.png">我的收藏<img class="img1" src="../assets/images/箭头右2.png"></div>
-            <div class="wode"><img src="../assets/images/产品2.png">帮助中心<img class="img1" src="../assets/images/箭头右2.png"></div>
+            <div class="wode" @click="tohuankuan"><img src="../assets/images/消息提醒.png">还款提醒<img class="img1" src="../assets/images/箭头右2.png"></div>
+            <div class="wode" @click="shoucang"><img src="../assets/images/收藏1.png">我的收藏<img class="img1" src="../assets/images/箭头右2.png"></div>
+            <div class="wode" @click="tohelp"><img src="../assets/images/产品2.png">帮助中心<img class="img1" src="../assets/images/箭头右2.png"></div>
         </main>
         <Myfooter></Myfooter>
     </div>
@@ -32,6 +32,17 @@ import Myfooter from '@/components/Myfooter.vue'
 export default {
     components:{
         Myfooter
+    },
+    methods:{
+      tohuankuan(){
+        this.$router.push('./huankuan')
+      },
+      shoucang(){
+        this.$router.push('./shoucang')
+      },
+      tohelp(){
+        this.$router.push('./help')
+      }
     }
 }
 
