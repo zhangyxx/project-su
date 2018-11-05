@@ -7,6 +7,8 @@ import Product from '@/components/Product'
 import Match from '@/components/Match'
 import Mycenter from '@/components/Mycenter'
 import Login from '@/components/Login'
+import paihang from '@/components/paihang'
+import Mynews from '@/components/Mynews'
 Vue.use(Router)
 
 export default new Router({
@@ -17,9 +19,19 @@ export default new Router({
       component: Login
     },
     {
+      path: '/Mynews',
+      name: 'Mynews',
+      component: Mynews
+    },
+    {
       path: '/Myfooter',
       name: 'Myfooter',
       component: Myfooter
+    },
+    {
+      path: '/paihang',
+      name: 'paihang',
+      component: paihang
     },
     {
       path: '/Myindex',

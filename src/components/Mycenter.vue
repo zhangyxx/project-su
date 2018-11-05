@@ -22,46 +22,53 @@
             <div class="wode"><img src="../assets/images/收藏1.png">我的收藏<img class="img1" src="../assets/images/箭头右2.png"></div>
             <div class="wode"><img src="../assets/images/产品2.png">帮助中心<img class="img1" src="../assets/images/箭头右2.png"></div>
         </main>
+        <Myfooter></Myfooter>
     </div>
 </template>
 
 <script>
-export default {};
+
+import Myfooter from '@/components/Myfooter.vue'
+export default {
+    components:{
+        Myfooter
+    }
+}
+
 </script>
 
 <style lang="less">
 main {
-  .wode{
+  .wode {
     height: 1.066667rem /* 80/75 */;
     width: 100%;
-    margin: .266667rem /* 20/75 */ 0;
-    font-size: .333333rem /* 25/75 */;
+    margin: 0.266667rem /* 20/75 */ 0;
+    font-size: 0.333333rem /* 25/75 */;
     line-height: 1.066667rem /* 80/75 */;
-    .img1{
-        margin-left: 6.5rem;
+    .img1 {
+      margin-left: 6.5rem;
     }
-    img{
-        width: .333333rem /* 25/75 */;
-        height: .333333rem /* 25/75 */;
-        margin: 0 .266667rem /* 20/75 */;
+    img {
+      width: 0.333333rem /* 25/75 */;
+      height: 0.333333rem /* 25/75 */;
+      margin: 0 0.266667rem /* 20/75 */;
     }
-
   }
-  .jin{
-    height: .866667rem /* 65/75 */;
-    margin-top: .266667rem /* 20/75 */ ;
+  .jin {
+    height: 0.866667rem /* 65/75 */;
+    margin-top: 0.266667rem /* 20/75 */;
     display: flex;
-    p{
-        flex: 1;
-        line-height: .866667rem /* 65/75 */;
-        font-size: .333333rem /* 25/75 */;
-        margin-left: .266667rem /* 20/75 */;
-        img{
-            width: .333333rem /* 25/75 */;
-            height: .333333rem /* 25/75 */;
-            margin-left: .133333rem /* 10/75 */;
-        }
-    };
+    p {
+      flex: 1;
+      line-height: 0.866667rem /* 65/75 */;
+      font-size: 0.333333rem /* 25/75 */;
+      margin-left: 0.266667rem /* 20/75 */;
+      img {
+        width: 0.333333rem /* 25/75 */;
+        height: 0.333333rem /* 25/75 */;
+        margin-left: 0.133333rem /* 10/75 */;
+      }
+    }
   }
   .tan {
     display: flex;
