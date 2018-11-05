@@ -1,25 +1,18 @@
 <template>
     <div class="login">
         <header>
-                <img src="../assets/images/loginX.png" alt="">
-                <img src="../assets/images/loginseeting.png" alt="">
+                <img src="../assets/images/loginX.png" alt="" @click="back">
+                <p>忘记密码</p>
+                <p></p>
         </header>
         <article>
             <div class="form">
-                    <ul>
-                        <li class="active">账号登陆</li>
-                        <li>快捷登陆</li>
-                    </ul>
                 <div class="main">
-                    <input type="text" placeholder="手机/论坛用户名">
-                    <input type="text" placeholder="6-20为密码">
+                    <input type="text" placeholder="手机号">
                     <input type="text" placeholder="图文验证码">
-                    <button class="denglv" @click="gofooter">登陆</button>
-                    <div class="footer">
-                        <p @click="goforget">忘记密码</p>
-                        <p>|</p>
-                        <p @click="goregister">快速注册</p>
-                    </div>
+                    <input type="text" placeholder="短信验证码">
+                    <input type="text" placeholder="6-20位新密码">
+                    <button class="denglv" @click="tofooter">登陆</button>
                 </div>
             </div>
         </article>
@@ -29,14 +22,11 @@
 <script>
 export default {
     methods:{
-        gofooter(){
+        back(){
+            this.$router.back();
+        },
+        tofooter(){
             this.$router.push('./Myfooter');
-        },
-        goforget(){
-            this.$router.push('./Forgetpass')
-        },
-        goregister(){
-            this.$router.push('./Register')
         },
     }
 };
@@ -51,7 +41,7 @@ html {
 .login {
   width: 100%;
   height: 17.786667rem /* 1334/75 */;
-  background: url(../assets/images/login3.jpg) no-repeat;
+  background: url(../assets/images/login2.jpg) no-repeat;
   background-size: 100%;
   header {
     display: flex;
@@ -62,6 +52,10 @@ html {
       width: 0.4rem /* 30/75 */;
       height: 0.4rem /* 30/75 */;
       margin: 0 0.4rem /* 30/75 */ /* 20/75 */;
+    }
+    p{
+        font-size: .4rem /* 30/75 */;
+        color: #ffffff;
     }
   }
   .active {
