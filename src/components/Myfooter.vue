@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer>
-            <router-link to="/" tag="dl">
+            <router-link to="/Myindex" tag="dl">
                      <dl>
                     <dt><i class="fa fa-rocket"></i></dt>
                     <dd>首页</dd>
