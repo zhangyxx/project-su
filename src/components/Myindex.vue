@@ -7,7 +7,7 @@
                 <img src="@/assets/images/企业主贷.png" alt="">
             </div>
             <p>首页</p>
-            <div>
+            <div @click="tonews">
                 <img src="@/assets/images/消息.png" alt="">
             </div>
         </nav>
@@ -40,7 +40,7 @@
                 </dt>
                 <dd>进度查询</dd>
             </dl>
-            <dl>
+            <dl @click="topaihang">
                 <dt>
                     <img src="@/assets/images/速贷排行.png" alt="">
                 </dt>
@@ -236,6 +236,12 @@ export default {
         swiperClick(s){
             // console.log(s);
         },
+        topaihang(){
+            this.$router.push('./paihang');
+        },
+        tonews(){
+            this.$router.push('./Mynews')
+        }
     },
 }
 </script>
