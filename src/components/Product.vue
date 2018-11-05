@@ -12,24 +12,124 @@
             <li>贷款利率</li> -->
         </ul>
         <div class="content">
-            <dl>
-                <dt><img src="../assets/images/login1.jpg" alt=""></dt>
-                <dd><h1>信用钱包</h1><p>信用钱包</p><span>成功申请1234次|评论1234次</span></dd>
-            </dl>
+          <div class="top">
+            <div class="left">
+              <img src="../assets/images/cp评论-icon.png" alt="">
+            </div>
+            <div class="zhong">
+              <h1>信用钱包<img src="../assets/images/cp卡.png" alt=""></h1>
+              <h3>信用钱包</h3>
+              <span>成功申请1234次|评论1234次</span>
+            </div>
             <div class="right">
-              <p><img src="../assets/images/cp筛选.png" alt="">
-              <img src="../assets/images/cp筛选.png" alt="">
-              <img src="../assets/images/cp筛选.png" alt="">
-              <img src="../assets/images/cp筛选.png" alt="">
-              <img src="../assets/images/cp筛选.png" alt="">
-              </p>
+              <div class="block">
+  <span class="demonstration"></span>
+  <el-rate v-model="value2" :colors="['#99A9BF', '#F7BA2A', '#FF9900']"> </el-rate>
+</div>
               <span>成功率</span>
             </div>
+
+          </div>
+          <div class="bottom">
+            <ul>
+              <li>标签</li>
+              <li>作业写</li>
+              <li>微胖强</li>
+              <li>应加强</li>
+            </ul>
+            <p>产品介绍里面都是内容阿萨德飞规划局快乐自行车请问撒而过就故意开发区啊一个覅飞秋轻微的擦伤预告ii</p>
+          </div>
+
+          
         </div>
-        <div class="tag">
-          <p><span>HOT</span><span>标签</span><span>标签你你你</span></p>
-          <p>产品简介：阿萨德的更改后即可去而一瓶自行车吗都是反环境去啊责任奋斗阿萨德飞规划局是地方法规和健康黄金客户</p>
+        <div class="content content1">
+          <div class="top">
+            <div class="left">
+              <img src="../assets/images/cp评论-icon.png" alt="">
+            </div>
+            <div class="zhong">
+              <h1>信用钱包<img src="../assets/images/cp卡.png" alt=""></h1>
+              <h3>信用钱包</h3>
+              <span>成功申请1234次|评论1234次</span>
+            </div>
+            <div class="right">
+              <p>☆☆☆☆☆</p>
+              <span>成功率</span>
+            </div>
+
+          </div>
+          <div class="bottom">
+            <ul>
+              <li>标签</li>
+              <li>作业写</li>
+              <li>微胖强</li>
+              <li>应加强</li>
+            </ul>
+            <p>产品介绍里面都是内容阿萨德飞规划局快乐自行车请问撒而过就故意开发区啊一个覅飞秋轻微的擦伤预告ii</p>
+          </div>
+
+          
         </div>
+
+        <div class="content content2">
+          <div class="top">
+            <div class="left">
+              <img src="../assets/images/cp评论-icon.png" alt="">
+            </div>
+            <div class="zhong">
+              <h1>信用钱包<img src="../assets/images/cp卡.png" alt=""></h1>
+              <h3>信用钱包</h3>
+              <span>成功申请1234次|评论1234次</span>
+            </div>
+            <div class="right">
+              <p>☆☆☆☆☆</p>
+              <span>成功率</span>
+            </div>
+
+          </div>
+          <div class="bottom">
+            <ul>
+              <li>标签</li>
+              <li>作业写</li>
+              <li>微胖强</li>
+              <li>应加强</li>
+            </ul>
+            <p>产品介绍里面都是内容阿萨德飞规划局快乐自行车请问撒而过就故意开发区啊一个覅飞秋轻微的擦伤预告ii</p>
+          </div>
+
+          
+        </div>
+
+
+        <div class="content content3">
+          <div class="top">
+            <div class="left">
+              <img src="../assets/images/cp评论-icon.png" alt="">
+            </div>
+            <div class="zhong">
+              <h1>信用钱包<img src="../assets/images/cp卡.png" alt=""></h1>
+              <h3>信用钱包</h3>
+              <span>成功申请1234次|评论1234次</span>
+            </div>
+            <div class="right">
+              <p>☆☆☆☆☆</p>
+              <span>成功率</span>
+            </div>
+
+          </div>
+          <div class="bottom">
+            <ul>
+              <li>标签</li>
+              <li>作业写</li>
+              <li>微胖强</li>
+              <li>应加强</li>
+            </ul>
+            <p>产品介绍里面都是内容阿萨德飞规划局快乐自行车请问撒而过就故意开发区啊一个覅飞秋轻微的擦伤预告ii</p>
+          </div>
+
+          
+        </div>
+        
         
     </div>
 
@@ -43,7 +143,9 @@ export default {
     return {
       tabIndex: 0,
       arr: ["全部", "借现金", "信用卡"],
-      arr1: ["综合指数", "成功率", "放款速度", "贷款利率"]
+      arr1: ["综合指数", "成功率", "放款速度", "贷款利率"],
+      value1: null,
+      value2: null
     };
   },
   computed: {
@@ -97,39 +199,99 @@ export default {
     margin: 0 auto;
     margin-top: 0.24rem;
     border-top: 0.12rem solid red;
-    display: flex;
-    dl{
-      flex: 4;
+    .top {
+      width: 100%;
+      height: 2.2667rem;
+      background-color: #fff;
       display: flex;
-        padding:  0.32rem ;
-        background: white;
-        dt{
-          flex: 1;
-            width: 1.6rem;
-            height: 1.6rem;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        dd{
-          flex: 2;
-
-        }
-    }
-    .right{
-      flex: 1;
-      p{
-        display: flex;
-        img{
-          flex: 1;
+      .left {
+        margin-top: 0.1333rem;
+        flex: 1;
+        img {
+          width: 1.6rem;
+          height: 1.6rem;
         }
       }
-      span{
-
+      .zhong {
+        margin-top: 0.1333rem;
+        h1 {
+          font-size: 26px;
+          img {
+            margin-left: 10px;
+          }
+        }
+        h3 {
+          font-size: 22px;
+          line-height: 36px;
+        }
+        span {
+          color: silver;
+        }
+        flex: 4;
       }
+      .right {
+        margin-top: 0.1333rem;
+        flex: 1;
 
+        p {
+          font-size: 22px;
+        }
+        span {
+          margin-left: 55%;
+          display: block;
+          color: silver;
+          margin-top: 0.9333rem;
+        }
+      }
     }
+    .bottom {
+      width: 100%;
+      height: 2.1067rem;
+      background-color: white;
+      border-top: 1px solid #ccc;
+      ul {
+        width: 100%;
+        height: 32px;
+        margin-top: 10px;
+        li {
+          float: left;
+          border-radius: 25px;
+          text-align: center;
+          line-height: 32px;
+          margin: 0 10px;
+          padding: 0 10px;
+          border: 1px solid red;
+          color: red;
+        }
+        li:nth-child(2) {
+          border: 1px solid blue;
+          color: blue;
+        }
+        li:nth-child(3) {
+          border: 1px solid orange;
+          color: orange;
+        }
+        li:nth-child(4) {
+          border: 1px solid green;
+          color: green;
+        }
+      }
+      p {
+        margin-top: 10px;
+        font-size: 0.2667rem;
+        line-height: 0.4rem;
+        color: silver;
+      }
+    }
+  }
+  .content1 {
+    border-top: 0.12rem solid blue;
+  }
+  .content2 {
+    border-top: 0.12rem solid orange;
+  }
+  .content3 {
+    border-top: 0.12rem solid green;
   }
   .activ {
     background-color: red;
