@@ -6,9 +6,10 @@ import router from './router'
 import './assets/css/reset.css'
 import './assets/flexible/flexible.debug.js'
 import './assets/flexible/flexible_css.debug'
-// import '../static/font-awesome-4.7.0/css/font-awesome.min.css'
 import '../static/font-awesome/4.7.0/css/font-awesome.min.css'
-// import '../static/font-awesome/4.7.0/fonts/'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 import 'swiper/dist/css/swiper.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'

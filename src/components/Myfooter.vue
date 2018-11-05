@@ -44,9 +44,24 @@ div {
     bottom: 0;
     left: 0;
     z-index: 11111;
+    justify-content: center;
+    align-items: center;
     dl {
       flex: 1;
+      text-align: center;
+        dt{
+            font-size: .266667rem /* 20/75 */;
+            color: #808080;
+        }
+        dd{
+            font-size: .266667rem /* 20/75 */;
+            color: #808080;
+            margin-top: .2rem /* 15/75 */;
+        }
     }
   }
+  dl.router-link-active{
+    color: #1e2e45;
+}
 }
 </style>
