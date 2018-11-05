@@ -3,7 +3,7 @@
         <div class="touxiang"></div>
         <div class="name">马杀鸡</div>
         <div class="geren">个人资料</div>
-        <div class="fu">&gt;</div>
+        <div class="fu"><img src="../assets/images/箭头右.png"></div>
     </header>
 </template>
 
@@ -45,11 +45,12 @@ export default {
         }
         .fu{
             position: absolute;
-            right: 5%;
+            right: 3%;
             display: inline-block;
-            width: .266667rem /* 20/75 */;
-            font-size: .466667rem /* 35/75 */;
-            color: #fff;
+            height: 100%;
+            img{
+                margin-top: .666667rem /* 50/75 */;
+            }
         }
     }
 </style>
