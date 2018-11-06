@@ -8,10 +8,10 @@
     </nav>
     <swiper class="banner" :options="swiperOption" ref="mySwiper" @click="swiperClick">
 
-      <swiper-slide><img src="@/assets/images/1.jpg"></swiper-slide>
+      <swiper-slide><img src="@/assets/images/9.jpg"></swiper-slide>
+      <swiper-slide><img src="@/assets/images/12.jpg"></swiper-slide>
       <swiper-slide><img src="@/assets/images/2.jpg"></swiper-slide>
       <swiper-slide><img src="@/assets/images/3.jpg"></swiper-slide>
-      <swiper-slide><img src="@/assets/images/4.jpg"></swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
@@ -34,10 +34,10 @@
     <p class="p_one pclick_one">借现金 <span class="span_one">更多></span></p>
     <swiper class="nav_three" :options="swiperOption_one" ref="_one" @click="swiperClick">
 
-      <swiper-slide><img src="@/assets/images/1.jpg"></swiper-slide>
-      <swiper-slide><img src="@/assets/images/2.jpg"></swiper-slide>
-      <swiper-slide><img src="@/assets/images/3.jpg"></swiper-slide>
-      <swiper-slide><img src="@/assets/images/4.jpg"></swiper-slide>
+      <swiper-slide><img src="@/assets/images/7.jpg"></swiper-slide>
+      <swiper-slide><img src="@/assets/images/11.jpg"></swiper-slide>
+      <swiper-slide><img src="@/assets/images/12.jpg"></swiper-slide>
+      <swiper-slide><img src="@/assets/images/13.jpg"></swiper-slide>
     </swiper>
     <p class="p_one pclick_two">还信用卡 <span class="span_two">更多></span></p>
     <swiper class="nav_three" :options="swiperOption_one" ref="_one" @click="swiperClick">
