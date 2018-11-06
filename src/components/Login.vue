@@ -16,9 +16,9 @@
                     <input type="text" placeholder="图文验证码">
                     <button class="denglv" @click="gofooter">登陆</button>
                     <div class="footer">
-                        <p>忘记密码</p>
+                        <p @click="topass">忘记密码</p>
                         <p>|</p>
-                        <p>快速注册</p>
+                        <p @clcik="toregister">快速注册</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,22 @@
 export default {
     methods:{
         gofooter(){
-            this.$router.push('./Myfooter');
+            this.$router.push('./Myfooter')
+              const loading = this.$loading({
+          lock: true,
+          text: 'Loading',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        });
+        setTimeout(() => {
+          loading.close();
+        }, 2000);
+        },
+        toregister(){
+          this.$router.push('./Register')
+        },
+        topass(){
+          this.$router.push('./Forgetpass')
         }
     }
 };

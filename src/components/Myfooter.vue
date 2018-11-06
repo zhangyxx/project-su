@@ -30,7 +30,8 @@
 </template>
 
 <script>
-export default {};
+export default {
+};
 </script>
 
 <style lang="less" scoped>
@@ -60,8 +61,8 @@ div {
         }
     }
   }
-  dl.router-link-active{
-    color: #1e2e45;
-}
+  .router-link-exact-active{
+    background: #1e2e45;
+    }
 }
 </style>
