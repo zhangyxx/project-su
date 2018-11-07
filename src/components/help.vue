@@ -35,14 +35,14 @@ export default {
   font-size: 0.4rem /* 30/75 */;
   background: rgb(244, 245, 246);
   main {
-      .neirong{
-          height: 2rem /* 150/75 */;
-          width: 100%;
-          line-height: .533333rem /* 40/75 */;
-          p{
-              padding:.266667rem /* 20/75 */;
-          }
+    .neirong {
+      height: 2rem /* 150/75 */;
+      width: 100%;
+      line-height: 0.533333rem /* 40/75 */;
+      p {
+        padding: 0.266667rem /* 20/75 */;
       }
+    }
     .wenti {
       width: 100%;
       height: 1.2rem /* 90/75 */;
