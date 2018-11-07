@@ -1,40 +1,28 @@
 <template>
-<div class="Match3">
-    <header>
-        <router-link to="/Match2" tag="p">
-        <p>&lt;</p>
-        </router-link>
-        <p>精准匹配</p>
-        <p></p>
-    </header>
-    <section class="information">
+    <div class="Match5">
+        <header>
+            <router-link to="/Match3" tag="p">
+            <p>&lt;</p>
+            </router-link>
+            <p>精准匹配</p>
+            <p></p>
+        </header>
+        <section class="information">
         <h2><span>基础信息··>··</span>身份信息··>··信用信息</h2>
         <address class="ars1">
                 <address>
-                    <label>学校名称</label>
+                    <label>稳定收入来源</label>
                     <input type="text" placeholder="请输入">
-                </address>
-                <address>
-                    <label>学校信息</label>
-                    <input type="text">
-                </address>
-                <address>
-                    <label>毕业年份</label>
-                     <select>
-                        <option value="">1-18</option>
-                        <option value="">18-65</option>
-                        <option value="">65-85</option>
-                    </select>
                 </address>
             </address>
     </section>
-      <router-link to="/Match2" tag="div" class="div">
-               <button class="btn1">上一步</button>
-        </router-link>
-        <router-link to="/Match4" tag="div" class="div1">
-               <button class="btn2">下一步</button>
-        </router-link>
-</div>
+    <router-link to="/Match4" tag="div" class="div">
+            <button class="btn1">上一步</button>
+    </router-link>
+    <router-link to="/Match6" tag="div" class="div1">
+            <button class="btn2">下一步</button>
+    </router-link>
+    </div>
 </template>
 
 <script>
@@ -51,7 +39,7 @@ input{
     border: none;
     outline:none;
 }
-.Match3 {
+.Match5 {
     width: 100%;
     height: 100%;
     background: #f5f5f5;
@@ -119,17 +107,16 @@ input{
             border: none;
             outline: none;
             line-height: 1.066667rem /* 80/75 */;
-        }
-        .btn2{
-            width: 50%;
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            border: none;
-            outline: none;
-            line-height: 1.066667rem /* 80/75 */;
-            background: #01ca7e;
-        }
+    }
+    .btn2{
+        width: 50%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        outline: none;
+        line-height: 1.066667rem /* 80/75 */;
+        background: #01ca7e;
+    }
 }
 </style>
-

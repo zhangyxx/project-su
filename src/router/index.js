@@ -17,6 +17,10 @@ import tongzhi from '@/components/tongzhi'
 import Register from '@/components/Register'
 import Forgetpass from '@/components/Forgetpass'
 import Match2 from '@/components/Match2'
+import Match3 from '@/components/Match3'
+import Match4 from '@/components/Match4'
+import Match5 from '@/components/Match5'
+import Match6 from '@/components/Match6'
 Vue.use(Router)
 
 export default new Router({
@@ -24,6 +28,26 @@ export default new Router({
             path: '/',
             name: 'Login',
             component: Login,
+        },
+        {
+            path: '/Match6',
+            name: 'Match6',
+            component: Match6,
+        },
+        {
+            path: '/Match5',
+            name: 'Match5',
+            component: Match5,
+        },
+        {
+            path: '/Match4',
+            name: 'Match4',
+            component: Match4,
+        },
+        {
+            path: '/Match3',
+            name: 'Match3',
+            component: Match3,
         },
         {
             path: '/Match2',

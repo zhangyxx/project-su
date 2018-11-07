@@ -1,7 +1,7 @@
 <template>
-<div class="Match3">
+<div class="Match4">
     <header>
-        <router-link to="/Match2" tag="p">
+        <router-link to="/Match3" tag="p">
         <p>&lt;</p>
         </router-link>
         <p>精准匹配</p>
@@ -11,29 +11,40 @@
         <h2><span>基础信息··>··</span>身份信息··>··信用信息</h2>
         <address class="ars1">
                 <address>
-                    <label>学校名称</label>
+                    <label>学历</label>
                     <input type="text" placeholder="请输入">
                 </address>
                 <address>
-                    <label>学校信息</label>
+                    <label>公司名称</label>
                     <input type="text">
                 </address>
                 <address>
-                    <label>毕业年份</label>
-                     <select>
-                        <option value="">1-18</option>
-                        <option value="">18-65</option>
-                        <option value="">65-85</option>
-                    </select>
+                    <label>单位性质</label>
+                    <input type="text">
+                </address>
+                <address>
+                    <label>当前工作年限</label>
+                </address>
+                <address>
+                    <label>企业邮箱</label>
+                    <input type="text">
+                </address>
+                <address>
+                    <label>月收入</label>
+                    <input type="text">
+                </address>
+                <address>
+                    <label>近6个月工资卡银行流水</label>
+                    <input type="text">
                 </address>
             </address>
     </section>
-      <router-link to="/Match2" tag="div" class="div">
-               <button class="btn1">上一步</button>
-        </router-link>
-        <router-link to="/Match4" tag="div" class="div1">
-               <button class="btn2">下一步</button>
-        </router-link>
+    <router-link to="/Match3" tag="div" class="div">
+            <button class="btn1">上一步</button>
+    </router-link>
+    <router-link to="/Match5" tag="div" class="div1">
+            <button class="btn2">下一步</button>
+    </router-link>
 </div>
 </template>
 
@@ -51,7 +62,7 @@ input{
     border: none;
     outline:none;
 }
-.Match3 {
+.Match4 {
     width: 100%;
     height: 100%;
     background: #f5f5f5;
@@ -132,4 +143,3 @@ input{
         }
 }
 </style>
-

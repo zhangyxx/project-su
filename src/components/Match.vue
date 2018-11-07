@@ -54,13 +54,8 @@ export default {
 </script>
 
 
- <style lang="less" scoped>
-.html{
-    position: relative;
-}
+<style lang="less" scoped>
 .Match{
-    width: 100%;
-    height: 100%;
     background: #f5f5f5;
     header{
         width: 100%;

@@ -4,18 +4,19 @@
             <router-link to="/Match" tag="p">
             <p class="btn3">&lt;</p>
             </router-link>
-            <p>精准匹配</p><p></p></header>
+            <p>精准匹配</p><p></p>
+        </header>
         <section class="information">
             <h2><span>基础信息</span>··>··身份信息··>··信用信息</h2>
             <address class="ars1">
                 <p>实名信息</p>
                 <address>
                     <label>姓名</label>
-                    <input type="text" name="xing">
+                    <input type="text" name="xing" placeholder="请输入">
                 </address>
                 <address>
                     <label>身份证号码</label>
-                    <input type="text" name="xing">
+                    <input type="text" name="xing" placeholder="请输入">
                 </address>
                  <address>
                     <label>性别</label>
@@ -66,11 +67,11 @@
                 <p>社交信息</p>
                 <address>
                     <label>联系人名字</label>
-                    <input type="text" name="xing">
+                    <input type="text" name="xing" placeholder="请输入">
                 </address>
                 <address>
                     <label>联系人手机号</label>
-                    <input type="text" name="xing">
+                    <input type="text" name="xing" placeholder="请输入">
                 </address>
                  <address>
                     <label>与联系人关系</label>
@@ -80,10 +81,13 @@
                 </address>
             </address>
         </section>
-        <router-link to="/Match3" tag="div" class="div">
+        <router-link to="/Match" tag="div" class="div">
                <button class="btn1">上一步</button>
+        </router-link>
+        <router-link to="/Match3" tag="div" class="div1">
                <button class="btn2">下一步</button>
         </router-link>
+        
     </div>
 </template>
 
@@ -158,56 +162,27 @@ html{
                 }
            }
         }
-        .ars2{
-            width: 100%;
-            background: #fff;
-            font-size: .373333rem /* 28/75 */;         
-            p{
-                padding:0 .346667rem /* 26/75 */;
-                color: #000;
-                display: block;
-                background: #f5f5f5;
-                line-height: .866667rem /* 65/75 */;
-            }
-            address{
-                display: flex;
-                justify-content: space-between;
-                padding: 0 .346667rem /* 26/75 */; 
-                border-bottom: 1px solid #e6e6e6;   
-                label{
-                    line-height: 1.2rem /* 90/75 */;
-                   
-                }
-                input{
-                        border: none;
-                        text-align: right;
-                }
-                select{
-                    border: none;
-                }
-                div{
-                    line-height: 1.2rem /* 90/75 */;
-                }
-           }
-        }
     }
-    .div{
-        width: 100%;
-        height: 1.066667rem /* 80/75 */;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        button{
+        
+        .btn1{
             width: 50%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
             border: none;
             outline: none;
             line-height: 1.066667rem /* 80/75 */;
-            float: left;
         }
         .btn2{
+            width: 50%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border: none;
+            outline: none;
+            line-height: 1.066667rem /* 80/75 */;
             background: #01ca7e;
         }
-    }
 }
 </style>
 
