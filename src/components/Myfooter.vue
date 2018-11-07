@@ -1,37 +1,36 @@
 <template>
     <div>
         <footer>
-            <router-link to="/Myindex" tag="dl">
-                     <dl>
-                    <dt><i class="fa fa-home" aria-hidden="true"></i></dt>
-                    <dd>首页</dd>
-                </dl>
+            <router-link to="/Myindex" tag="div">
+                    <div>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <p>首页</p>
+                    </div>
             </router-link>
-             <router-link to="/Product" tag="dl">
-                     <dl>
-                    <dt><i class="fa fa-smile-o" aria-hidden="true"></i></dt>
-                    <dd>产品</dd>
-                </dl>
+             <router-link to="/Product" tag="div">
+             <div>
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                    <p>产品</p>
+             </div>
             </router-link>
-             <router-link to="/Match" tag="dl">
-                     <dl>
-                    <dt><i class="fa fa-github-alt" aria-hidden="true"></i></dt>
-                    <dd>精准匹配</dd>
-                </dl>
+             <router-link to="/Match" tag="div">
+                    <div>
+                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                            <p>精准匹配</p>
+                    </div>
             </router-link>
-             <router-link to="/Mycenter" tag="dl">
-                     <dl>
-                    <dt><i class="fa fa-user" aria-hidden="true"></i></dt>
-                    <dd>个人中心</dd>
-                </dl>
+             <router-link to="/Mycenter" tag="div">
+                     <div>
+                         <i class="fa fa-user" aria-hidden="true"></i>
+                         <p>个人中心</p>
+                     </div>
             </router-link>
         </footer>
     </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="less" scoped>
@@ -39,7 +38,6 @@ div {
   footer {
     width: 100%;
     height: 60px;
-    background: #cccccc;
     display: flex;
     position: fixed;
     bottom: 0;
@@ -47,22 +45,24 @@ div {
     z-index: 11111;
     justify-content: center;
     align-items: center;
-    dl {
-      flex: 1;
-      text-align: center;
-        dt{
-            font-size: .266667rem /* 20/75 */;
-            color: #808080;
+    background: #cccccc;
+    div{
+        height: 100%;
+        flex: 1;
+        text-align: center;
+        font-size: .266667rem /* 20/75 */;
+        color: #808080;
+        i{
+            font-size: .4rem /* 30/75 */;
+            margin-top: .4rem /* 30/75 */;
         }
-        dd{
-            font-size: .266667rem /* 20/75 */;
-            color: #808080;
-            margin-top: .2rem /* 15/75 */;
+        p{
+            margin-top: .306667rem /* 23/75 */ /* 20/75 */;
         }
+    }
+     div.router-link-active{
+      background: #1e2e45;
     }
   }
-  .router-link-exact-active{
-    background: #1e2e45;
-    }
 }
 </style>

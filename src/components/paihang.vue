@@ -1,6 +1,6 @@
 <template>
   <div class="ranking">
-    <nav class="nav_one"><span class="fa fa-chevron-left"></span>速贷排行 </nav>
+    <nav class="nav_one" @click="back"><span class="fa fa-chevron-left"></span>速贷排行 </nav>
     <div class="nav_two">
       <ul>
         <li class="active">成功率</li>
@@ -56,7 +56,11 @@
 </template>
 <script>
   export default {
-   
+      methods:{
+        back(){
+          this.$router.back();
+        }
+      }
   }
 
 </script>

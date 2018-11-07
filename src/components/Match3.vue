@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <div class="Match3">
     <header>
         <router-link to="/Match2" tag="p">
@@ -35,6 +36,9 @@
                <button class="btn2">下一步</button>
         </router-link>
 </div>
+=======
+    <div></div>
+>>>>>>> e82252dd13138b8710923bfab728ea402603577d
 </template>
 
 <script>
