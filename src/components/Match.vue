@@ -37,7 +37,7 @@
               
         </aside>
         <router-link to="/Match2" tag="div">
-         <button class="btn3">下一步</button>
+                 <button class="btn3">下一步</button>
         </router-link>
        <Myfooter></Myfooter>
     </div>
