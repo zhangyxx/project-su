@@ -18,7 +18,9 @@
                     <div class="footer">
                         <p @click="topass">忘记密码</p>
                         <p>|</p>
-                        <p @clcik="toregister">快速注册</p>
+                        <router-link tag="p" to="Register"> 
+                           <p>快速注册</p>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -40,9 +42,6 @@ export default {
         setTimeout(() => {
           loading.close();
         }, 2000);
-        },
-        toregister(){
-          this.$router.push('./Register')
         },
         topass(){
           this.$router.push('./Forgetpass')

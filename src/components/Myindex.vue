@@ -12,13 +12,6 @@
       <swiper-slide><img src="@/assets/images/12.jpg"></swiper-slide>
       <swiper-slide><img src="@/assets/images/2.jpg"></swiper-slide>
       <swiper-slide><img src="@/assets/images/3.jpg"></swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
-      <div class="swiper-scrollbar" slot="scrollbar">
-      </div>
-      <div class="swiper-pagination">
-      </div>
     </swiper>
     <div class="nav_two">
       <dl><dt><img src="@/assets/images/进度查询.png" alt=""></dt>
@@ -89,7 +82,7 @@
         </dl><span>2018-10-12 </span>
       </div>
     </div>
-    <div class="more">查看更多</div>
+    <div class="more" @click="tozixun">查看更多</div>
     <Myfooter></Myfooter>
   </div>
 </template>
@@ -100,7 +93,6 @@
     components: {
       Myfooter
     }
-
     ,
     data() {
       return {
@@ -111,7 +103,6 @@
           '@/assets/images/4.jpg'
         ],
         swiperOption: {
-
           loop: true,
           // autoplay: true,
           autoplay: {
@@ -119,27 +110,10 @@
             stopOnLastSlide: false,
             disableOnInteraction: false,
           }
-
           ,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          }
-
-          ,
-          pagination: {
-            el: '.swiper-pagination',
-          }
-
-          ,
-          // some swiper options/callbacks
-          // 所有的参数同 swiper 官方 api 参数
-          // ...
         }
-
         ,
         swiperOption_one: {
-
           loop: true,
           slidesPerView: 3,
           spaceBetween: 30,
@@ -147,7 +121,6 @@
             el: '.swiper-pagination',
             clickable: true,
           }
-
           ,
         }
       }
@@ -166,7 +139,6 @@
       swiperClick(s) {
         // console.log(s);
       }
-
       ,
       topaihang() {
         this.$router.push('./paihang');
@@ -175,6 +147,9 @@
       ,
       tonews() {
         this.$router.push('./Mynews')
+      },
+      tozixun(){
+        this.$router.push('./zixun')
       }
     }
 

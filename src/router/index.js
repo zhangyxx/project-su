@@ -17,6 +17,7 @@ import tongzhi from '@/components/tongzhi'
 import Register from '@/components/Register'
 import Forgetpass from '@/components/Forgetpass'
 import Match2 from '@/components/Match2'
+import zixun from '@/components/zixun'
 Vue.use(Router)
 
 export default new Router({
@@ -24,6 +25,11 @@ export default new Router({
             path: '/',
             name: 'Login',
             component: Login,
+        },
+        {
+            path: '/zixun',
+            name: 'zixun',
+            component: zixun,
         },
         {
             path: '/Match2',

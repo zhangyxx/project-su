@@ -178,12 +178,40 @@
                         <el-rate v-model="value1"></el-rate>
                       </div>
                   </swiper-slide>
-                  <swiper-slide>2</swiper-slide>
-                  <swiper-slide>3</swiper-slide>
+                  <swiper-slide class="swi-1">
+                         <dl>
+                        <dt><img src="../assets/images/cp现金.png" alt=""></dt>
+                        <dd><h1>省呗</h1></dd>
+                        <dd>省呗</dd>
+                      </dl>
+                      <p class="ping">
+                        <a >成功申请1234次</a>
+                        <a>评论1234次</a>
+                        <a>放款量1234次</a>
+                      </p>
+                      <div class="block bk1">
+                        <el-rate v-model="value1"></el-rate>
+                      </div>
+                  </swiper-slide>
+                  <swiper-slide class="swi-1">
+                           <dl>
+                        <dt><img src="../assets/images/cp现金.png" alt=""></dt>
+                        <dd><h1>省呗</h1></dd>
+                        <dd>省呗</dd>
+                      </dl>
+                      <p class="ping">
+                        <a >成功申请1234次</a>
+                        <a>评论1234次</a>
+                        <a>放款量1234次</a>
+                      </p>
+                      <div class="block bk1">
+                        <el-rate v-model="value1"></el-rate>
+                      </div>
+                  </swiper-slide>
                    <div class="swiper-pagination"></div>
                </swiper>
         </div>
-        
+        <Myfooter></Myfooter>
     </div>
 
 
@@ -191,7 +219,11 @@
 </template>
 
 <script>
+import Myfooter from './Myfooter'
 export default {
+  components:{
+    Myfooter
+  },
   data() {
     return {
       tabIndex: 0,
@@ -372,8 +404,15 @@ export default {
     width: 100%;
     height: 100%;
     .banner {
+      .swiper-pagination{
+        position: fixed;
+        bottom:0;
+        left:50%;
+      }
       .swi-1 {
         width: 100%;
+        margin-top: 1.333333rem /* 100/75 */;
+        height:100%;
         dl {
           text-align: center;
           margin-top: 25px;

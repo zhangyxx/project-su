@@ -47,19 +47,21 @@ div {
     align-items: center;
     background: #cccccc;
     div{
+        height: 100%;
         flex: 1;
         text-align: center;
         font-size: .266667rem /* 20/75 */;
         color: #808080;
         i{
             font-size: .4rem /* 30/75 */;
+            margin-top: .4rem /* 30/75 */;
         }
         p{
             margin-top: .306667rem /* 23/75 */ /* 20/75 */;
         }
     }
      div.router-link-active{
-      color: #1e2e45;
+      background: #1e2e45;
     }
   }
 }
