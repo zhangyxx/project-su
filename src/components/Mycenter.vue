@@ -48,7 +48,7 @@ export default {
 
 </script>
 
-<style lang="less">
+<style scoped lang="less">
 main {
   .wode {
     height: 1.066667rem /* 80/75 */;

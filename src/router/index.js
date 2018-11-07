@@ -10,8 +10,12 @@ import Login from '@/components/Login'
 import paihang from '@/components/paihang'
 import Mynews from '@/components/Mynews'
 import huankuan from '@/components/huankuan'
+import huankuan2 from '@/components/huankuan2'
 import shoucang from '@/components/shoucang'
 import help from '@/components/help'
+import tongzhi from '@/components/tongzhi'
+import Register from '@/components/Register'
+import Forgetpass from '@/components/Forgetpass'
 Vue.use(Router)
 
 export default new Router({
@@ -19,7 +23,17 @@ export default new Router({
     {
       path: '/',
       name: 'Login',
-      component: Login
+      component: Login,
+    },
+    {
+      path: '/Forgetpass',
+      name: 'Forgetpass',
+      component: Forgetpass
+    },
+    {
+      path: '/Register',
+      name: 'Register',
+      component: Register
     },
     {
       path: '/help',
@@ -27,9 +41,19 @@ export default new Router({
       component: help
     },
     {
+      path: '/tongzhi',
+      name: 'tongzhi',
+      component: tongzhi
+    },
+    {
       path: '/shoucang',
       name: 'shoucang',
       component: shoucang
+    },
+    {
+      path: '/huankuan2',
+      name: 'huankuan2',
+      component: huankuan2
     },
     {
       path: '/huankuan',
@@ -39,7 +63,7 @@ export default new Router({
     {
       path: '/Mynews',
       name: 'Mynews',
-      component: Mynews
+      component: Mynews,
     },
     {
       path: '/Myfooter',
