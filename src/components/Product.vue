@@ -5,11 +5,16 @@
             <!-- <li>借现金</li>
             <li>信用卡</li> -->
         </ul>
+        <div class="tab1" v-if=" tabIndex==0">
+
+        
         <ul class="subMeau">
             <li v-for="(v,i) in arr1 " :key="i">{{v}}</li>
             <!-- <li>成功率</li>
             <li>放款速度</li>
             <li>贷款利率</li> -->
+            <div class=""><img src="../assets/images/cp筛选.png" alt=""></div>
+        
         </ul>
         <div class="content">
           <div class="top">
@@ -21,12 +26,14 @@
               <h3>信用钱包</h3>
               <span>成功申请1234次|评论1234次</span>
             </div>
-            <div class="right">
+            <div class="right"> 
               <div class="block">
-  <span class="demonstration"></span>
-  <el-rate v-model="value2" :colors="['#99A9BF', '#F7BA2A', '#FF9900']"> </el-rate>
-</div>
-              <span>成功率</span>
+                <el-rate
+                v-model="value2"
+                :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
+                </el-rate>
+              </div>
+              <p>成功率</p>
             </div>
 
           </div>
@@ -53,8 +60,13 @@
               <span>成功申请1234次|评论1234次</span>
             </div>
             <div class="right">
-              <p>☆☆☆☆☆</p>
-              <span>成功率</span>
+               <div class="block">
+                   <el-rate
+                   v-model="value3"
+                    :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
+                  </el-rate>
+                </div>
+              <p>成功率</p>
             </div>
 
           </div>
@@ -82,8 +94,14 @@
               <span>成功申请1234次|评论1234次</span>
             </div>
             <div class="right">
-              <p>☆☆☆☆☆</p>
-              <span>成功率</span>
+              <div class="block">
+                   <el-rate
+                   v-model="value1"
+                    :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
+                  </el-rate>
+                </div>
+              <p>成功率</p>
+
             </div>
 
           </div>
@@ -112,9 +130,15 @@
               <span>成功申请1234次|评论1234次</span>
             </div>
             <div class="right">
-              <p>☆☆☆☆☆</p>
-              <span>成功率</span>
-            </div>
+              <div class="block">
+                   <el-rate
+                   v-model="value"
+                    :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
+                  </el-rate>
+                </div>
+              <p>成功率</p>
+
+             </div>
 
           </div>
           <div class="bottom">
@@ -129,7 +153,36 @@
 
           
         </div>
-        
+        </div>
+
+
+        <div class="tab2" v-if=" tabIndex == 1">
+          这是借现金页面
+        </div>
+
+
+        <div class="tab3" v-if=" tabIndex == 2" >
+                <swiper class="banner" :options="swiperOption" ref="mySwiper" @click="swiperClick">
+                  <swiper-slide class="swi-1">
+                      <dl>
+                        <dt><img src="../assets/images/cp现金.png" alt=""></dt>
+                        <dd><h1>省呗</h1></dd>
+                        <dd>省呗</dd>
+                      </dl>
+                      <p class="ping">
+                        <a >成功申请1234次</a>
+                        <a>评论1234次</a>
+                        <a>放款量1234次</a>
+                      </p>
+                      <div class="block bk1">
+                        <el-rate v-model="value1"></el-rate>
+                      </div>
+                  </swiper-slide>
+                  <swiper-slide>2</swiper-slide>
+                  <swiper-slide>3</swiper-slide>
+                   <div class="swiper-pagination"></div>
+               </swiper>
+        </div>
         
     </div>
 
@@ -144,19 +197,35 @@ export default {
       tabIndex: 0,
       arr: ["全部", "借现金", "信用卡"],
       arr1: ["综合指数", "成功率", "放款速度", "贷款利率"],
+      value2: null,
+      value: null,
       value1: null,
-      value2: null
+      value3: null,
+      tabIndex: 0,
+      show: 2,
+      swiperOption: {
+        loop: true,
+        // autoplay: true,
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      }
     };
   },
   computed: {
     swiper() {
       // 然后你就可以使用this的swiper对象去做你想做的事了
-      return this.$refs.mySwiper.swiper;
+      return this.$refs._one.swiper;
     }
   },
-  methods: {}
+  methods: {
+    swiperClick(s) {
+      // console.log(s);
+    }
+  }
 };
 </script>
+
 
  <style lang="less"  >
 * {
@@ -192,6 +261,13 @@ export default {
     li {
       flex: 1;
     }
+    div {
+      background-color: seagreen;
+      width: 1.2rem;
+      height: 1.2rem;
+      text-align: center;
+      line-height: 1.2rem;
+    }
   }
   .content {
     width: 9.4667rem;
@@ -215,13 +291,13 @@ export default {
       .zhong {
         margin-top: 0.1333rem;
         h1 {
-          font-size: 26px;
+          font-size: 22px;
           img {
             margin-left: 10px;
           }
         }
         h3 {
-          font-size: 22px;
+          font-size: 18px;
           line-height: 36px;
         }
         span {
@@ -231,16 +307,10 @@ export default {
       }
       .right {
         margin-top: 0.1333rem;
-        flex: 1;
-
+        flex: 3;
         p {
-          font-size: 22px;
-        }
-        span {
-          margin-left: 55%;
-          display: block;
-          color: silver;
-          margin-top: 0.9333rem;
+          margin-top: 30px;
+          margin-left: 50%;
         }
       }
     }
@@ -296,6 +366,48 @@ export default {
   .activ {
     background-color: red;
     color: white;
+  }
+
+  .tab3 {
+    width: 100%;
+    height: 100%;
+    .banner {
+      .swi-1 {
+        width: 100%;
+        dl {
+          text-align: center;
+          margin-top: 25px;
+          dt {
+            img {
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+            }
+          }
+          dd {
+            color: #333;
+            margin-top: 15px;
+            h1 {
+              font-size: 24px;
+              color: darkcyan;
+            }
+          }
+        }
+        .ping {
+          width: 100%;
+          text-align: center;
+          height: 66px;
+          a {
+            padding: 10px;
+            color: darkgray;
+            line-height: 66px;
+          }
+        }
+        .bk1{
+          text-align: center;
+        }
+      }
+    }
   }
 }
 </style>
