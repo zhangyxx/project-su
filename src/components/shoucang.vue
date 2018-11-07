@@ -20,7 +20,6 @@
                         <div><p>信用钱包</p>
                             <div class="block">
                                 <el-rate
-                                    v-model="value2"
                                     :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
                                 </el-rate>
                             </div>
@@ -44,8 +43,7 @@
                         <div><p>信用钱包</p>
                             <div class="block">
                                 <el-rate
-                                    v-model="value2"
-                                    :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
+                                     :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
                                 </el-rate>
                             </div>
                         </div>
@@ -71,11 +69,6 @@ export default {
   methods: {
     back() {
       this.$router.back();
-    },
-    data() {
-      return {
-        value2: null
-      };
     }
   }
 };
