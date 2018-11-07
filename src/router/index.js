@@ -17,14 +17,11 @@ import tongzhi from '@/components/tongzhi'
 import Register from '@/components/Register'
 import Forgetpass from '@/components/Forgetpass'
 import Match2 from '@/components/Match2'
-<<<<<<< HEAD
 import Match3 from '@/components/Match3'
 import Match4 from '@/components/Match4'
 import Match5 from '@/components/Match5'
 import Match6 from '@/components/Match6'
-=======
 import zixun from '@/components/zixun'
->>>>>>> e82252dd13138b8710923bfab728ea402603577d
 Vue.use(Router)
 
 export default new Router({
@@ -34,7 +31,6 @@ export default new Router({
             component: Login,
         },
         {
-<<<<<<< HEAD
             path: '/Match6',
             name: 'Match6',
             component: Match6,
@@ -53,11 +49,10 @@ export default new Router({
             path: '/Match3',
             name: 'Match3',
             component: Match3,
-=======
+        }, {
             path: '/zixun',
             name: 'zixun',
             component: zixun,
->>>>>>> e82252dd13138b8710923bfab728ea402603577d
         },
         {
             path: '/Match2',
