@@ -1,7 +1,7 @@
 <template>
     <div class="box">
         <header>
-            <div><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+            <div @click="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
             <div>还款提醒</div>
             <div>修改</div>
         </header>
@@ -50,7 +50,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    back() {
+      this.$router.back();
+    }
+  }
+};
 </script>
 
 <style lang="less" scoped>
@@ -110,15 +116,13 @@ export default {};
     line-height: 2.266667rem /* 170/75 */;
     width: 100%;
     background: rgb(29, 47, 70);
-    height: 2.266667rem /* 170/75 */;
-    width: 100%;
     display: flex;
     div {
       flex: 1;
       color: #fff;
-    }
-    div:nth-child(1) {
-      padding-left: 0.266667rem /* 20/75 */;
+      i {
+        padding-left: 0.266667rem /* 20/75 */;
+      }
     }
     div:nth-child(2) {
       text-align: center;
