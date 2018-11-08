@@ -20,7 +20,7 @@
                 </address>
                  <address>
                     <label>性别</label>
-                    <div>
+                    <div class="ars2">
                         <input type="radio" name="ni" id="">男
                         <input type="radio" name="ni" id="">女
                     </div>
@@ -28,6 +28,7 @@
                  <address>
                     <label>年龄</label>
                     <select>
+                        <option value="">请选择</option>
                         <option value="">1-18</option>
                         <option value="">18-65</option>
                         <option value="">65-85</option>
@@ -38,15 +39,25 @@
                 <p>地址信息</p>
                 <address>
                     <label>现居地址</label>
-                    <input type="text" name="xing">
+                    <select>
+                        <option value="">请选择</option>
+                        <option value="">1-18</option>
+                        <option value="">18-65</option>
+                        <option value="">65-85</option>
+                    </select>
                 </address>
                 <address>
                     <label>现居地址类型</label>
-                    <input type="text" name="xing">
+                    <select>
+                        <option value="">请选择</option>
+                        <option value="">1-18</option>
+                        <option value="">18-65</option>
+                        <option value="">65-85</option>
+                    </select>
                 </address>
                  <address>
                     <label>婚姻状况</label>
-                    <div>
+                    <div class="ars2">
                         <input type="radio" name="hun" id="">已婚
                         <input type="radio" name="hun" id="">未婚
                     </div>
@@ -56,11 +67,21 @@
                 <p>资产信息</p>
                 <address>
                     <label>房产</label>
-                    <input type="text" name="xing">
+                    <select>
+                        <option value="">请选择</option>
+                        <option value="">1-18</option>
+                        <option value="">18-65</option>
+                        <option value="">65-85</option>
+                    </select>
                 </address>
                 <address>
                     <label>车产</label>
-                    <input type="text" name="xing">
+                    <select>
+                        <option value="">请选择</option>
+                        <option value="">1-18</option>
+                        <option value="">18-65</option>
+                        <option value="">65-85</option>
+                    </select>
                 </address>
             </address>
              <address class="ars1">
@@ -75,9 +96,11 @@
                 </address>
                  <address>
                     <label>与联系人关系</label>
-                    <div>
-                        <input type="text" id="">
-                    </div>
+                    <select>
+                        <option value="">请选择</option>
+                        <option value="">父子</option>
+                        <option value="">母子</option>
+                    </select>
                 </address>
             </address>
         </section>
@@ -147,8 +170,7 @@ html{
                 padding: 0 .346667rem /* 26/75 */; 
                 border-bottom: 1px solid #e6e6e6;   
                 label{
-                    line-height: 1.2rem /* 90/75 */;
-                   
+                    line-height: 1.2rem /* 90/75 */;    
                 }
                 input{
                         border: none;
@@ -160,6 +182,12 @@ html{
                 div{
                     line-height: 1.2rem /* 90/75 */;
                 }
+           }
+           .ars2{
+               width: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
            }
         }
     }

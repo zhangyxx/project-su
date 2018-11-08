@@ -16,7 +16,7 @@
                 </address>
                 <address>
                     <label>学校信息</label>
-                    <input type="text">
+                    <input type="text" >
                 </address>
                 <address>
                     <label>毕业年份</label>

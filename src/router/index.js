@@ -22,6 +22,7 @@ import Match4 from '@/components/Match4'
 import Match5 from '@/components/Match5'
 import Match6 from '@/components/Match6'
 import zixun from '@/components/zixun'
+import also from '@/components/also'
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +30,11 @@ export default new Router({
             path: '/',
             name: 'Login',
             component: Login,
+        },
+        {
+            path: '/also',
+            name: 'also',
+            component: also,
         },
         {
             path: '/Match6',

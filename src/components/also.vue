@@ -1,5 +1,5 @@
 <template>
-    <div class="Match">
+    <div class="also">
         <header>精准匹配</header>
         <aside class="borrow">
             <p class="borrow_p1">
@@ -31,10 +31,9 @@
          <aside class="wo">
              <p class="p1">我要</p>
              <div>
-                <button class="btn4">借现金</button>
-                <button class="btn5" @click="also">还信用卡</button>
+                <button class="btn4" @click="Match">借现金</button>
+                <button class="btn5">还信用卡</button>
              </div>
-              
         </aside>
         <router-link to="/Match2" tag="div">
                  <button class="btn3">下一步</button>
@@ -51,8 +50,8 @@ export default {
         Myfooter,
     },
     methods:{
-        also(){
-            this.$router.push('./also');
+        Match(){
+            this.$router.push('./Match');
         }
     }
 }
@@ -60,7 +59,7 @@ export default {
 
 
 <style lang="less" scoped>
-.Match{
+.also{
     background: #f5f5f5;
     header{
         width: 100%;
@@ -177,14 +176,14 @@ export default {
             width: 100%;
             display: flex;
             justify-content: space-evenly;
-            .btn5{
+            .btn4{
                 width: 1.733333rem /* 130/75 */;
                 height: .933333rem /* 70/75 */;
                 margin-top: 1rem /* 75/75 */;
                  border: none;
                 outline: none;
             }
-            .btn4{
+            .btn5{
                 width: 1.733333rem /* 130/75 */;
                 height: .933333rem /* 70/75 */;
                 margin-top: 1rem /* 75/75 */;
